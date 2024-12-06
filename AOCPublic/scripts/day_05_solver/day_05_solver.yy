@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"day_05_solver",
   "parent":{
-    "name":"AOCDDay_05",
-    "path":"folders/AOCDDay_05.yy",
+    "name":"AOCDay_05",
+    "path":"folders/AOCDay_05.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

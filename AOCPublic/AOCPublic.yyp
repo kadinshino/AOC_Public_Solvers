@@ -11,7 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"AOCDay_04","folderPath":"folders/AOCDay_04.yy","name":"AOCDay_04","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"AOCDDay_05","folderPath":"folders/AOCDDay_05.yy","name":"AOCDDay_05","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"AOCDay_05","folderPath":"folders/AOCDay_05.yy","name":"AOCDay_05","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
