@@ -1,9 +1,4 @@
 /// @description Insert description here
-var _your_data = "file"
-
-global.test_data_04 = _your_data///// Removed. posted by mistake.
-
-global.count_results = 0 
 
 function search_word(_grid, _word) {
     var _rows = array_length(_grid);
@@ -100,4 +95,33 @@ function search_xmas_pattern(_grid) {
 
     ds_map_destroy(_unique_positions);
     return _found_positions;
+}
+
+function search_and_display_positions(_data, _word, _pattern) {
+    var _positions_word = search_word(_data, _word);
+    var _positions_pattern = search_xmas_pattern(_data);
+    
+    // Output results for the word search
+    if (array_length(_positions_word) > 0) {
+        for (var _i = 0; _i < array_length(_positions_word); _i++) {
+            var _pos = _positions_word[_i];
+            show_debug_message("Found " + _word + " at row " + string(_pos[0] + 1) + ", col " + string(_pos[1] + 1));
+        }
+    } else {
+        show_debug_message("No occurrences of " + _word + " found.");
+    }
+
+    // Output results for the pattern search
+    if (array_length(_positions_pattern) > 0) {
+        for (var _i = 0; _i < array_length(_positions_pattern); _i++) {
+            var _pos = _positions_pattern[_i];
+            show_debug_message("Found " + _pattern + " pattern at row " + string(_pos[0] + 1) + ", col " + string(_pos[1] + 1));
+        }
+    } else {
+        show_debug_message("No occurrences of the " + _pattern + " pattern found.");
+    }
+
+    // Display the count of found positions for both
+    show_debug_message("Total occurrences of the word '" + _word + "': " + string(array_length(_positions_word)));
+    show_debug_message("Total occurrences of the " + _pattern + " pattern: " + string(array_length(_positions_pattern)));
 }

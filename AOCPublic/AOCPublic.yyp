@@ -11,24 +11,24 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"AOCDay_04","folderPath":"folders/AOCDay_04.yy","name":"AOCDay_04","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"AOCDDay_05","folderPath":"folders/AOCDDay_05.yy","name":"AOCDDay_05","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"AOCPublic",
   "resources":[
-    {"id":{"name":"o_day_04_manager","path":"objects/o_day_04_manager/o_day_04_manager.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"day_04_loader","path":"scripts/day_04_loader/day_04_loader.yy",},},
+    {"id":{"name":"day_04_solver","path":"scripts/day_04_solver/day_04_solver.yy",},},
+    {"id":{"name":"day_05_loader","path":"scripts/day_05_loader/day_05_loader.yy",},},
+    {"id":{"name":"day_05_solver","path":"scripts/day_05_solver/day_05_solver.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
-  "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-  ],
+  "RoomOrderNodes":[],
   "templateType":"game",
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
