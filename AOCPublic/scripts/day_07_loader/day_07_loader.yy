@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"day_07_loader",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"day_07_loader",
+  "parent":{
+    "name":"AOCDay_07",
+    "path":"folders/AOCDay_07.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
