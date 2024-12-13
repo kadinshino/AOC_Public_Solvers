@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"day_12_solver",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"day_12_solver",
+  "parent":{
+    "name":"AOCDay_12",
+    "path":"folders/AOCDay_12.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

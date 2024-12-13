@@ -14,12 +14,13 @@
     {"$GMFolder":"","%Name":"AOCDay_05","folderPath":"folders/AOCDay_05.yy","name":"AOCDay_05","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"AOCDay_07","folderPath":"folders/AOCDay_07.yy","name":"AOCDay_07","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"AOCDay_11","folderPath":"folders/AOCDay_11.yy","name":"AOCDay_11","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"AOCDay_12","folderPath":"folders/AOCDay_12.yy","name":"AOCDay_12","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"AOCPublic",
   "resources":[
@@ -30,6 +31,7 @@
     {"id":{"name":"day_07_loader","path":"scripts/day_07_loader/day_07_loader.yy",},},
     {"id":{"name":"day_07_solver","path":"scripts/day_07_solver/day_07_solver.yy",},},
     {"id":{"name":"day_11_solver","path":"scripts/day_11_solver/day_11_solver.yy",},},
+    {"id":{"name":"day_12_solver","path":"scripts/day_12_solver/day_12_solver.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
