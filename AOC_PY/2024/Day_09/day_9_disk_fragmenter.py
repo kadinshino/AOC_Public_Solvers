@@ -7,7 +7,7 @@ def load_disk_string_from_file(filename):
         print(f"[ERROR] Failed to read file {filename}: {e}")
         return ""
 
-########################################################################
+################################ Part 1 ################################
 
 def convert_to_dense_with_ids(disk_string):
    """
@@ -62,7 +62,7 @@ def calculate_checksum(data):
             checksum += i * int(char)
     return checksum
 
-########################################################################
+################################ Part 2 ################################
 
 class Block:
     def __init__(self, id, size):
