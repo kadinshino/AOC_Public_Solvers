@@ -116,4 +116,3 @@ if __name__ == '__main__':
 
     print(f"Final Decimal Output P1: {decimal_output}")
     print(f"Final Swapped Wires P2: {swapped_wires}")
-

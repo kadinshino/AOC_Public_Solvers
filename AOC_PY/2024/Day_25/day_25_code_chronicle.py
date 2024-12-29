@@ -67,13 +67,13 @@ def count_fitting_pairs(locks, keys):
 file_path = "day_25_input.txt"  # Replace with your file path
 locks, keys = parse_file_with_classification(file_path)
 
-print("Parsed Locks:")
-for i, lock in enumerate(locks):
-    print(f"Lock {i}:\n" + "\n".join(lock))
+# print("Parsed Locks:")
+# for i, lock in enumerate(locks):
+#     print(f"Lock {i}:\n" + "\n".join(lock))
 
-print("\nParsed Keys:")
-for i, key in enumerate(keys):
-    print(f"Key {i}:\n" + "\n".join(key))
+# print("\nParsed Keys:")
+# for i, key in enumerate(keys):
+#     print(f"Key {i}:\n" + "\n".join(key))
 
 # Count the number of fitting pairs
 result = count_fitting_pairs(locks, keys)
