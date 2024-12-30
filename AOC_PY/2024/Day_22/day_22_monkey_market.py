@@ -10,9 +10,10 @@ def read_initial_secrets(file_path):
 
 # Generate the next secret (aligned with `step` function)
 def generate_next_secret(n):
-    n = ((n * 64) ^ n) % 16777216
-    n = ((n // 32) ^ n) % 16777216
-    n = ((n * 2048) ^ n) % 16777216
+    key = 16777216
+    n = ((n * 64) ^ n) % key
+    n = ((n // 32) ^ n) % key
+    n = ((n * 2048) ^ n) % key
     return n
 
 def process_line(n, sequence_length=4):
@@ -62,7 +63,7 @@ def find_best_sequence(file_path):
 # Entry point
 if __name__ == "__main__":
     # Path to the text file containing initial secrets
-    file_path = 'secrets.txt'
+    file_path = 'day_22_input.txt'
 
     # Find the results
     part1_result, part2_result = find_best_sequence(file_path)
