@@ -17,7 +17,6 @@ def count_ways_to_construct(design, towel_patterns):
     # The last element of dp gives the total number of ways to construct the full design
     return dp[len(design)]
 
-
 def process_designs_with_all_options(file_path):
     # Read the input from the specified file
     with open(file_path, 'r') as file:
