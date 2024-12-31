@@ -36,7 +36,6 @@ movemap = {
 def get_direction_vector(instruction):
     return movemap.get(instruction)
 
-
 def grid_to_dict(grid):
     """Convert a 2D grid to a dictionary for faster lookups."""
     grid_dict = {}
@@ -44,7 +43,6 @@ def grid_to_dict(grid):
         for c, cell in enumerate(row):
             grid_dict[(r, c)] = cell
     return grid_dict
-
 
 def load_game_data(filename):
     """Load the map and instructions from a file."""
@@ -57,11 +55,9 @@ def load_game_data(filename):
 
     return grid_data, moves_data
 
-
 def is_valid_position(grid_dict, x, y):
     """Check if a position is within bounds and not a wall."""
     return grid_dict.get((x, y)) != wall
-
 
 def can_push_boxes_chain(grid_dict, x, y, dx, dy):
     """Check if a chain of boxes can be pushed."""
@@ -74,7 +70,6 @@ def can_push_boxes_chain(grid_dict, x, y, dx, dy):
         y += dy
     return False
 
-
 def push_boxes_chain(grid_dict, x, y, dx, dy):
     """Push a chain of boxes in the given direction."""
     boxes = []
@@ -86,7 +81,6 @@ def push_boxes_chain(grid_dict, x, y, dx, dy):
     for bx, by in reversed(boxes):
         grid_dict[(bx + dx, by + dy)] = box
         grid_dict[(bx, by)] = open_space
-
 
 def move_robot(grid_dict, robot_x, robot_y, instruction):
     """Attempt to move the robot based on the given instruction."""
@@ -109,13 +103,11 @@ def move_robot(grid_dict, robot_x, robot_y, instruction):
 
     return robot_x, robot_y
 
-
 def execute_instructions(grid_dict, robot_x, robot_y, moves_data):
     """Execute instructions and update the grid."""
     for instr in moves_data:
         robot_x, robot_y = move_robot(grid_dict, robot_x, robot_y, instr)
     return grid_dict, robot_x, robot_y
-
 
 def calculate_gps_sum(grid_dict):
     """Calculate the sum of all boxes' GPS coordinates."""
@@ -124,7 +116,6 @@ def calculate_gps_sum(grid_dict):
         if cell == box:
             gps_sum += GPS_MULTIPLIER * x + y
     return gps_sum
-
 
 def process_final_movements(walls, box_pieces, start, moves_data):
     """Process final movements to calculate a separate output."""
@@ -163,7 +154,6 @@ def process_final_movements(walls, box_pieces, start, moves_data):
     ans2 = sum(100 * box[0].r + box[0].c for box in box_pieces.values()) // 2
     return ans2
 
-
 def initialize_game_elements(grid_data):
     """Initialize walls, box pieces, and the robot's start position."""
     walls = set()
@@ -183,7 +173,6 @@ def initialize_game_elements(grid_data):
                 box_pieces[b] = (a, b)
 
     return walls, box_pieces, start
-
 
 def find_boxes_to_move(box, delta, walls, box_pieces):
     """Find all boxes affected by movement."""
