@@ -107,7 +107,6 @@ class ThreeBitComputer:
         # Return the smallest valid `A`, or None if no solutions found
         return min(results) if results else None
 
-
 if __name__ == "__main__":
     # Assume the input is in a file named 'input.txt'
     input_file = 'day_17_input.txt'
